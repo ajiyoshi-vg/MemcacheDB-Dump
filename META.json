@@ -42,15 +42,20 @@
       },
       "runtime" : {
          "requires" : {
+            "BerkeleyDB" : "0",
             "perl" : "5.008001"
          }
       },
       "test" : {
          "requires" : {
-            "Test::More" : "0.98"
+            "Test::More" : "0.98",
+            "Test::Warn" : "0"
          }
       }
    },
    "release_status" : "unstable",
-   "version" : "0.01"
+   "version" : "0.01",
+   "x_contributors" : [
+      "ajiyoshi-vg <Yoichi_Sudo@voyagegroup.com>"
+   ]
 }

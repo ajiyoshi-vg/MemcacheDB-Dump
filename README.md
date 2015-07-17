@@ -4,7 +4,6 @@ MemcacheDB::Dump - It's new $module
 
 # SYNOPSIS
 
-```
     use MemcacheDB::Dump;
 
     my $dumper = MemcacheDB::Dump->new('/path/to/db/file');
@@ -14,7 +13,6 @@ MemcacheDB::Dump - It's new $module
     my $value = $dumper->get('sume key');
 
     my @keys = $dumper->keys;
-```
 
 # DESCRIPTION
 
