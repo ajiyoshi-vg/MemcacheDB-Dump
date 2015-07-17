@@ -2,8 +2,6 @@
 
 MemcacheDB::Dump - It's new $module
 
-[![Build Status](https://travis-ci.org/ajiyoshi-vg/MemcacheDB-Dump.svg)](https://travis-ci.org/ajiyoshi-vg/MemcacheDB-Dump)
-
 # SYNOPSIS
 
     use MemcacheDB::Dump;

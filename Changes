@@ -2,6 +2,9 @@ Revision history for Perl extension MemcacheDB-Dump
 
 {{$NEXT}}
 
+0.03 2015-07-17T07:58:05Z
+    - add travis banner
+
 0.02 2015-07-17T07:47:38Z
     - fix typo
 
