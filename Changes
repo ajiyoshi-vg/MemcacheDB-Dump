@@ -2,6 +2,10 @@ Revision history for Perl extension MemcacheDB-Dump
 
 {{$NEXT}}
 
+0.02 2015-07-17T07:49:26Z
+
+    - fix typo
+
 0.01 2015-07-17T07:39:26Z
 
     - original version
