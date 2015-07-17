@@ -1,5 +1,4 @@
 package MemcacheDB::Dump;
-use 5.008001;
 use strict;
 use warnings;
 
@@ -25,7 +24,7 @@ sub DESTROY {
 sub run {
     my ($self) = @_;
     my %ret;
-    while ( my ($key, $val) = each %{ $self->{bdb} } ){
+    while ( my ($key, $val) = each %{ $self->{bdb} } ) {
         $ret{$key} = getBody($val);
     }
     \%ret;
@@ -47,8 +46,9 @@ sub getBody {
     itemBody(itemDecode($val));
 }
 
-# MemcacheDB is just freading a item struct below.
+# MemcacheDB is just fread an item struct below.
 # https://code.google.com/p/memcachedb/source/browse/branches/memcachedb-1.2.0/memcachedb.h#179
+#XXX this is NOT sane way to extract C struct. because your C compiler may put other padding bytes for the alignment.
 sub itemDecode {
     my ($val) = @_;
     my ($nBytes, $nSuffix, $nKey, $padA, $padB, @body) = unpack("LC4C*", $val);
@@ -86,9 +86,19 @@ MemcacheDB::Dump - It's new $module
 
     use MemcacheDB::Dump;
 
+    my $dumper = MemcacheDB::Dump->new('/path/to/db/file');
+
+    my $hashref = $dumper->run;
+
+    my $value = $dumper->get('sume key');
+
+    my @keys = $dumper->keys;
+
+
 =head1 DESCRIPTION
 
-MemcacheDB::Dump is ...
+MemcacheDB is a KVS designed for persistent.
+MemcacheDB::Dump is dumper for MemcacheDB's backend strage file.
 
 =head1 LICENSE
 

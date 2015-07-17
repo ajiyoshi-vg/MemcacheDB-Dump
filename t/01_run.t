@@ -14,6 +14,7 @@ is_deeply $dumper->run, {
 };
 is $dumper->get("str1"), "a_string";
 is $dumper->get("bin1"), "\x00\x01\x02";
+is $dumper->get("no such key"), undef;
 
 is_deeply [ sort $dumper->keys ], [ "bin1", "str1" ];
 
