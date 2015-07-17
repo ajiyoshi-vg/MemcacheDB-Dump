@@ -97,7 +97,7 @@ MemcacheDB::Dump - It's new $module
 
 =head1 DESCRIPTION
 
-MemcacheDB is a KVS designed for persistent.
+MemcacheDB (http://memcachedb.org/) is a KVS designed for persistent.
 MemcacheDB::Dump is dumper for MemcacheDB's backend strage file.
 
 =head1 LICENSE

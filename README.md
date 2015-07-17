@@ -4,11 +4,22 @@ MemcacheDB::Dump - It's new $module
 
 # SYNOPSIS
 
+```
     use MemcacheDB::Dump;
+
+    my $dumper = MemcacheDB::Dump->new('/path/to/db/file');
+
+    my $hashref = $dumper->run;
+
+    my $value = $dumper->get('sume key');
+
+    my @keys = $dumper->keys;
+```
 
 # DESCRIPTION
 
-MemcacheDB::Dump is ...
+MemcacheDB (http://memcachedb.org/) is a KVS designed for persistent.
+MemcacheDB::Dump is dumper for MemcacheDB's backend strage file.
 
 # LICENSE
 
