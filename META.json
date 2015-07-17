@@ -54,6 +54,17 @@
       }
    },
    "release_status" : "unstable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/ajiyoshi-vg/MemcacheDB-Dump/issues"
+      },
+      "homepage" : "https://github.com/ajiyoshi-vg/MemcacheDB-Dump",
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/ajiyoshi-vg/MemcacheDB-Dump.git",
+         "web" : "https://github.com/ajiyoshi-vg/MemcacheDB-Dump"
+      }
+   },
    "version" : "0.01",
    "x_contributors" : [
       "ajiyoshi-vg <Yoichi_Sudo@voyagegroup.com>"
