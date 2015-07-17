@@ -90,7 +90,7 @@ MemcacheDB::Dump - It's new $module
 
     my $hashref = $dumper->run;
 
-    my $value = $dumper->get('sume key');
+    my $value = $dumper->get('some key');
 
     my @keys = $dumper->keys;
 
