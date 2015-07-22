@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/ajiyoshi-vg/MemcacheDB-Dump.svg?branch=master)](https://travis-ci.org/ajiyoshi-vg/MemcacheDB-Dump)
 # NAME
 
 MemcacheDB::Dump - It's new $module

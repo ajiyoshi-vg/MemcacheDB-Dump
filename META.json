@@ -66,6 +66,7 @@
       }
    },
    "version" : "0.04",
+   "x_authority" : "cpan:AJIYOSHI",
    "x_contributors" : [
       "ajiyoshi-vg <Yoichi_Sudo@voyagegroup.com>"
    ]

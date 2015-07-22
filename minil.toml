@@ -1,5 +1,6 @@
 name = "MemcacheDB-Dump"
 badges = ["travis"]
 module_maker="ModuleBuildTiny"
-authority = "cpan:AJIYOSHI"
 
+[release]
+pause_config = "~/.pause"
