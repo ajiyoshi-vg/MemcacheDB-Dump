@@ -5,7 +5,7 @@ use warnings;
 use Carp;
 use BerkeleyDB;
 
-our $VERSION = "0.03";
+our $VERSION = "0.04";
 
 sub new {
     my ($class, $path) = @_;
